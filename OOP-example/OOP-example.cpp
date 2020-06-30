@@ -12,7 +12,7 @@ namespace nsEx1
     // Секция определения членов класса.
     public:  
         Ex1()=default;
-        Ex1(int A, int B);
+        Ex1(int A, int B );
         void Swap_ab(void);
         int get_a(void);
         int get_b(void);
@@ -91,19 +91,19 @@ int main()
 
     cout<< "Instances of class examples was declared succsessfully" <<endl;
 
-    cout << "A in first Example1: " << Example1_1.get_a() << endl
-        << "B in first Example1: " << Example1_1.get_b() << endl;
+    cout << "A in Example1_1: " << Example1_1.get_a() << endl
+        << "B in Example1_1: " << Example1_1.get_b() << endl;
 
-    cout << "A in second Example1: " << Example1_2.get_a() << endl
-        << "B in second Example1: " << Example1_2.get_b() << endl;
+    cout << "A in Example1_2: " << Example1_2.get_a() << endl
+        << "B in Example1_2: " << Example1_2.get_b() << endl;
 
-    cout << "A in first Example2: " << Example2_1.get_a() << endl
-        << "B in first Example2: " << Example2_1.get_b() << endl
-        << "C in first Example2: " << Example2_1.get_c() << endl;
+    cout << "A in Example2_1: " << Example2_1.get_a() << endl
+        << "B in Example2_1: " << Example2_1.get_b() << endl
+        << "C in Example2_1: " << Example2_1.get_c() << endl;
 
-    cout << "A in second Example2: " << Example2_2.get_a() << endl
-        << "B in second Example2: " << Example2_2.get_b() << endl
-        << "C in second Example2: " << Example2_2.get_c() << endl;
+    cout << "A in Example2_2: " << Example2_2.get_a() << endl
+        << "B in Example2_2: " << Example2_2.get_b() << endl
+        << "C in Example2_2: " << Example2_2.get_c() << endl;
 
     // Свапы
 
@@ -111,35 +111,35 @@ int main()
     Example1_2.Swap_ab();
     cout<< "As and Bs swaped in all class Example1 instances" << endl;
 
-    cout << "A in first Example1: " << Example1_1.get_a() << endl
-        << "B in first Example1: " << Example1_1.get_b() << endl;
+    cout << "A in Example1_1: " << Example1_1.get_a() << endl
+        << "B in Example1_1: " << Example1_1.get_b() << endl;
 
-    cout << "A in second Example1: " << Example1_2.get_a() << endl
-        << "B in second Example1: " << Example1_2.get_b() << endl;
+    cout << "A in Example1_2: " << Example1_2.get_a() << endl
+        << "B in Example1_2: " << Example1_2.get_b() << endl;
 
     Example2_1.Swap_ac();
     Example2_2.Swap_ac();
     cout << "As and Cs swaped in all class Example2 instances" << endl;
 
-    cout << "A in first Example2: " << Example2_1.get_a() << endl
-        << "B in first Example2: " << Example2_1.get_b() << endl
-        << "C in first Example2: " << Example2_1.get_c() << endl;
+    cout << "A in Example2_1: " << Example2_1.get_a() << endl
+        << "B in Example2_1: " << Example2_1.get_b() << endl
+        << "C in Example2_1: " << Example2_1.get_c() << endl;
 
-    cout << "A in second Example2: " << Example2_2.get_a() << endl
-        << "B in second Example2: " << Example2_2.get_b() << endl
-        << "C in second Example2: " << Example2_2.get_c() << endl;
+    cout << "A in Example2_2: " << Example2_2.get_a() << endl
+        << "B in Example2_2: " << Example2_2.get_b() << endl
+        << "C in Example2_2: " << Example2_2.get_c() << endl;
 
     Example2_1.Swap_bc();
     Example2_2.Swap_bc();
     cout << "Bs and Cs swaped in all class Example2 instances" << endl;
 
-    cout << "A in first Example2: " << Example2_1.get_a() << endl
-        << "B in first Example2: " << Example2_1.get_b() << endl
-        << "C in first Example2: " << Example2_1.get_c() << endl;
+    cout << "A in Example2_1: " << Example2_1.get_a() << endl
+        << "B in Example2_1: " << Example2_1.get_b() << endl
+        << "C in Example2_1: " << Example2_1.get_c() << endl;
 
-    cout << "A in second Example2: " << Example2_2.get_a() << endl
-        << "B in second Example2: " << Example2_2.get_b() << endl
-        << "C in second Example2: " << Example2_2.get_c() << endl;
+    cout << "A in Example2_2: " << Example2_2.get_a() << endl
+        << "B in Example2_2: " << Example2_2.get_b() << endl
+        << "C in Example2_2: " << Example2_2.get_c() << endl;
 
 
 

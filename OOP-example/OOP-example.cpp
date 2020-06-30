@@ -15,7 +15,10 @@ namespace nsEx1
         void Swap_ab( void );
         int get_a( void );
         int get_b( void );
-    private:
+        virtual int sum() {
+            return 0;
+        }
+    protected:
         int a,b;
     };
     // Конец секции.
@@ -40,16 +43,36 @@ namespace nsEx1
         return b;
     }
     // Конец секции.
+
+    // Унаследованный класс
+
+    class Ex2 : public Ex1 {
+    public: 
+        Ex2(int A, int B) :Ex1(A, B) {}
+        int sum();
+    };
+
+    int Ex2::sum() {
+        int s = a + b;
+        return s;
+    }
 }
 using namespace nsEx1;
 
 int main()
 {
-    Ex1 Example1(10,15);
-    Ex1 Example2(20, 25);
-    cout << "A in first Example: " << Example1.get_a() << " B in second Example: " << Example2.get_b() << endl;
-    Example1.Swap_ab();
-    Example2.Swap_ab();
-    cout << "A in first Example: " << Example1.get_a() << " B in second Example: " << Example2.get_b() << endl;
+    Ex1* example;
+    Ex2 Example1(10,15);
+    Ex2 Example2(20, 25);
+    cout << "A in Example1 " << Example1.get_a() << " B in Example1: " << Example1.get_b() << endl;
+    cout << "A in Example2 " << Example2.get_a() << " B in Example2: " << Example2.get_b() << endl;
+    example = &Example1;
+    int ex1Sum = example->sum();
+    cout << "Sum of A an B in Example1: " << ex1Sum << endl;
+    example = &Example2;
+    int ex2Sum = example->sum();
+    cout << "Sum of A an B in Example2: " << ex2Sum << endl;
+
+
 }
 
